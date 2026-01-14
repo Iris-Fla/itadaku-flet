@@ -4,4 +4,11 @@ version = "0.1.0"
 description = "Flet-based desktop application"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["flet>=0.23.0"]
+dependencies = [
+    "accelerate>=1.12.0",
+    "flet>=0.23.0",
+    "hf-xet>=1.2.0",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "transformers==4.56.0",
+]
