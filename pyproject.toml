@@ -6,11 +6,18 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.12.0",
-    "flet>=0.23.0",
+    "flet[all]==0.80.1",
     "hf-xet>=1.2.0",
+    "nncf>=2.19.0",
     "openvino>=2025.4.1",
-    "optimum[intel]>=2.1.0",
+    "optimum-intel[openvino]>=1.27.0",
     "torch>=2.9.1",
     "torchvision>=0.24.1",
     "transformers==4.56.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
